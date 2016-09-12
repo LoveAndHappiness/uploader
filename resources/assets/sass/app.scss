@@ -1,0 +1,145 @@
+@import "_bootstrap";
+@import "font-awesome/font-awesome";
+@import "dropzone";
+
+// @btn-font-weight: 300;
+// @font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+
+body, label, .checkbox label {
+	font-weight: 300;
+}
+
+h1 {
+	font-family: 'Roboto';
+	color: lightblue;
+}
+
+.btn-next {
+	width: 100%;
+}
+
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+	.stepwizard-row {
+		display: table-row;
+
+		.stepwizard-step {
+		    display: table-cell;
+		    text-align: center;
+		    position: relative;
+			p {
+				margin-top: 10px;
+			}
+
+			button[disabled] {
+			    opacity: 1 !important;
+			    filter: alpha(opacity=100) !important;				
+			}
+
+			.btn-circle {
+			  width: 30px;
+			  height: 30px;
+			  text-align: center;
+			  padding: 6px 0;
+			  font-size: 12px;
+			  line-height: 1.428571429;
+			  border-radius: 15px;
+			}
+		}
+	}
+
+	.stepwizard-row:before {
+	    top: 14px;
+	    bottom: 0;
+	    position: absolute;
+	    content: " ";
+	    width: 100%;
+	    height: 1px;
+	    background-color: #ccc;
+	    z-order: 0;
+	}
+}
+
+
+form.dropzone.dz-clickable {
+	font-size: 28px;
+	border: 2px dashed #0087F7
+}
+
+.payment-section {
+	.payment-icons {
+		background-image: url('/img/payment/payment-icons.jpg');
+		width: 100px;
+		height: 30px;
+		background-repeat: no-repeat;	
+	}
+
+	.payment-cc {
+		background-position-y: 0px;
+	}
+
+	.payment-va {
+		background-position-y: -30px;
+	}
+
+	.payment-ot {
+		background-position-y: -60px;
+	}
+}
+
+.order-details {
+	ul {
+		li {
+		    display: block;
+		    // float: left;
+		    padding-top: 15px;
+		    // margin-left: -2.5em;
+    		&:before {
+    			font-family: 'fontawesome';
+				content: "\f00c ";
+				font-size: 20px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.second-column {
+		text-align: right;
+	}
+
+	.last-row {
+		font-size: 25px;
+	}
+
+	.panel-heading {
+		font-size: 20px;
+		padding: 10px 8px;
+	}
+
+}
+
+label.payment-method-label {
+	font-size: 22px;
+}
+
+.go-back {
+	padding-top: 10px;
+	font-size: 18px;
+	padding-bottom: 20px;
+	a:before {
+		font-family: 'fontawesome';
+		content: "\f100";
+		margin-right: 5px;
+	}
+}
+
+input.btn-next {
+	margin-bottom: 20px!important;
+}
+
+input.smallprint-checkbox {
+	margin-bottom: 20px!important;
+}

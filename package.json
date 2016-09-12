@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "bootstrap-validator": "^0.7.2",
+    "gulp": "^3.8.8",
+    "gulp-sass": "*",
+    "gulp-watch": "*",
+    "laravel-elixir": "*",
+    "laravel-elixir-browser-sync": "^0.1.6"
+  }
+}
